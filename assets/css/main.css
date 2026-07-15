@@ -122,3 +122,9 @@ a:visited {
     color: #575b62;
 }
 
+img {
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    overflow-clip-margin: content-box;
+    overflow: clip;
