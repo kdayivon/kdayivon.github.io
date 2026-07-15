@@ -1,17 +1,14 @@
-* {
-    box-sizing: border-box;
+body {
+    margin: 0;
 }
 
-div {
-    display: block;
+a {
+    text-decoration: none;
+    color: #000;
+}
 
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    color: #222831;
+a:visited {
+    color: #575b62;
 }
 
 .site-header {
@@ -89,14 +86,6 @@ body {
     cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-a:visited {
-    color: #575b62;
-}
 
 img {
     height: auto;
