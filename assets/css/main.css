@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -17,7 +18,9 @@ a:visited {
 
 .site-header {
     border-bottom: 1px solid #ccc;
-    padding: .5em 1em;
+    padding: 1em;
+    margin-left: 3em;
+    margin-right: 3em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,16 +46,16 @@ a:visited {
 }
 
 #main {
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1em;
-    padding-right: 1em;
-    max-width: 100%;
+    display: flex;
+    margin-right: 3em;
+    margin-left: 3em;
 }
 
 .sidebar {
-    clear: both;
+    width: 280px;
+    height: 100vh;
+    box-sizing: border-box;
+    position: fixed;
 }
 .sidebar img {
     width: 100%;
@@ -60,14 +63,15 @@ a:visited {
 .sidebar>* {
     margin-top: 1em;
     margin-bottom: 1em; 
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 .sidebar .author__name {
     font-size: 1em;
 }
 
 .author__avatar {
-    display: table-cell;
-    vertical-align: top;
     width: 36px;
     height: 36px;
 }
@@ -77,22 +81,6 @@ a:visited {
     border-radius: 50%;
 }
 
-.author__content {
-    display: table-cell;
-    vertical-align: top;
-    padding-left: 15px;
-    padding-right: 25px;
-    line-height: 1;
-}
-
-.author__urls-wrapper {
-    position: relative;
-    display: table-cell;
-    vertical-align: middle;
-    z-align: 20;
-    cursor: pointer;
-}
-
 
 img {
     height: auto;
@@ -100,5 +88,16 @@ img {
     border: 0;
     overflow-clip-margin: content-box;
     overflow: clip;
+}
+
+.content {
+    flex: 1;
+    box-sizing: border-box;
+    height: 100vh;
+    margin-left: 280px;
+    text-align: justify;
+}
+.content h1 {
+    margin-top: 0.3em;
 }
 
