@@ -76,6 +76,19 @@ a:visited {
     font-size: 1em;
 }
 
+.author__avatar {
+    margin: 0em;
+    padding: 0px;
+}
+.author__content {
+    margin-top: 0em;
+    padding: 0px;
+}
+.author__urls-wrapper {
+    margin: 0em;
+    padding: 0px;
+}
+
 .content {
     flex: 1;
     box-sizing: border-box;
@@ -87,6 +100,6 @@ a:visited {
     margin-top: 0.3em;
 }
 .content p {
-    margin-right: 3em;
+    margin-right: 1em;
 }
 
