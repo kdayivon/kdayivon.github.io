@@ -76,25 +76,6 @@ a:visited {
     font-size: 1em;
 }
 
-.author__avatar {
-    width: 36px;
-    height: 36px;
-}
-
-.author__avater img {
-    max-width: 110px; 
-    border-radius: 50%;
-}
-
-
-img {
-    height: auto;
-    vertical-align: middle;
-    border: 0;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-
 .content {
     flex: 1;
     box-sizing: border-box;
