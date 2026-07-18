@@ -56,8 +56,13 @@ a:visited {
     height: 100vh;
     box-sizing: border-box;
     position: fixed;
+    transition: opacity 0.2s ease-in-out;
 }
 .sidebar img {
+    padding: 5px;
+    border: 1px solid #cecfd1;
+    max-width: 110px;
+    border-radius: 50%;
     width: 100%;
 }
 .sidebar>* {
