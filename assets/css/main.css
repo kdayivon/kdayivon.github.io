@@ -5,6 +5,9 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: -apple-system,
+    BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande", Arial, sans-serif;
+    line-height: 1.5;
 }
 
 a {
@@ -16,9 +19,13 @@ a:visited {
     color: #575b62;
 }
 
+ul li {
+    margin-bottom: 0.5em;
+}
+
 .site-header {
     border-bottom: 1px solid #ccc;
-    padding: 1em;
+    padding: 0.5em;
     margin-left: 3em;
     margin-right: 3em;
     display: flex;
@@ -56,6 +63,7 @@ a:visited {
     height: 100vh;
     box-sizing: border-box;
     position: fixed;
+    opacity: 0.75;
     transition: opacity 0.2s ease-in-out;
 }
 .sidebar img {
@@ -76,9 +84,16 @@ a:visited {
     font-size: 1em;
 }
 
+.sidebar li {
+    list-style-type: none;
+    font-size: 0.75em;
+    line-height: 1.5;
+}
+
 .author__avatar {
     margin: 0em;
     padding: 0px;
+    margin-top: 1em;
 }
 .author__content {
     margin-top: 0em;
@@ -86,7 +101,18 @@ a:visited {
 }
 .author__urls-wrapper {
     margin: 0em;
+    margin-bottom: 1em;
     padding: 0px;
+}
+.author__urls {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+}
+.author__urls li {
+    white-space: nowrap
 }
 
 .content {
