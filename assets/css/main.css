@@ -204,3 +204,57 @@ ul li {
     font-size: 1rem;
     cursor: pointer;
 }
+
+/* projects.html */
+.content.projects a {
+    text-decoration: none;
+    color: blue;
+}
+.content.projects a:hover {
+    color: lightblue;
+}
+.content.projects p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    text-align: left;
+    overflow: hidden;
+}
+.content.projects img {
+    width: 100%;
+}
+.content.projects h3 {
+    margin-top: 0;
+}
+
+.p-row {
+    margin: 0px -18px;
+    padding: 8px;
+}
+.p-row>.p-column {
+    padding: 6px;
+}
+.p-column {
+    float: left;
+    width: 20%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.p-column:hover {
+    width: 25%;
+    top: -20px;
+    box-shadow: 0 14px 8px rgba(0, 128, 0, 0.5);
+}
+.p-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.p-content {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gray;
+}
+.date {
+    color: grey;
+}
